@@ -292,9 +292,9 @@ with st.form("sleep_assessment_form"):
             [
                 "YouTube",
                 "TikTok / Reels",
-                "Instagram / Reddit"
-                "Streaming (Netflix/Hulu)"
-                "Messaging / Chat"
+                "Instagram / Reddit",
+                "Streaming (Netflix/Hulu)",
+                "Messaging / Chat",
                 "News / Reading"
             ]
         )
