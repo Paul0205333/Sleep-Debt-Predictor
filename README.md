@@ -64,7 +64,7 @@ Halo_Sleep-Debt-Predictor/
 
 ### 1. Open the project directory
 
-Open a terminal in the `ML Proj` directory, where `app.py`, `data/`, `models/`, and `notebooks/` are located.
+Open a terminal in the `Halo_Sleep-Debt-Predictor` directory, where `app.py`, `data/`, `models/`, and `notebooks/` are located.
 
 ### 2. Create a virtual environment
 
