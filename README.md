@@ -146,3 +146,36 @@ When the notebook runs from the `notebooks/` directory, its current save path is
 Because preprocessing is already part of the saved pipeline, do not manually scale or one-hot encode app inputs before calling `model.predict()`.
 
 The training notebook compares Logistic Regression, Random Forest, and Decision Tree classifiers using stratified cross-validation and GridSearchCV. Macro-F1 is used as the refit metric, with accuracy, macro precision, and macro recall also recorded.
+
+# Troubleshooting
+
+### `FileNotFoundError` for the model
+
+- Run Streamlit from the project root.
+- Confirm `models/sleep_debt_model.pkl` exists.
+- If you change the project layout, update the model path accordingly.
+
+### `FileNotFoundError` for the CSV
+
+- Check the notebook's current working directory.
+- Update the CSV path to `../data/bedtime_screentime_sleep_debt.csv` when running from `notebooks/`.
+
+### scikit-learn version warning or error
+
+The supplied model was serialized using scikit-learn 1.9.1. Install the pinned version in `requirements.txt`, or retrain and save the model using the environment you intend to use.
+
+### A Python package is missing
+
+Activate the project's virtual environment and run:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### Streamlit's default port is already in use
+
+Use another port:
+
+```bash
+python -m streamlit run app.py --server.port 8502
+```
