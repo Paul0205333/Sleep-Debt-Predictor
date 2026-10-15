@@ -282,7 +282,9 @@ with st.form("sleep_assessment_form"):
             [
                 "Student",
                 "Remote Tech",
-                "Healthcare / Shift Worker"
+                "Healthcare / Shift Worker",
+                "Freelance / Creative",
+                "Corporate 9-to-5"
             ]
         )
 
