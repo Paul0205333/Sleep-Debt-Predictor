@@ -7,7 +7,7 @@ import joblib
 # ============================================
 
 st.set_page_config(
-    page_title="Sleep Debt Assessment",
+    page_title="Sleep Debt Prediction",
     page_icon="🌙",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -156,7 +156,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("Sleep Debt Assessment")
+st.title("Sleep Debt Prediction")
 
 st.markdown(
     """
@@ -302,7 +302,7 @@ with st.form("sleep_assessment_form"):
     st.markdown("<br>", unsafe_allow_html=True)
 
     submitted = st.form_submit_button(
-        "Generate Sleep Assessment",
+        "Generate Sleep Debt Prediction",
         use_container_width=True
     )
 
